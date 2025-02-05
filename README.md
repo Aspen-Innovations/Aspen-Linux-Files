@@ -6,31 +6,32 @@ Thank you for having the time for reading this, now, where should we start?
 Booting the "boot.img" file:
 (you can download the boot.img by the google drive link listed below)
 https://drive.google.com/drive/u/1/folders/1tvsbvEpFVFWr1RMNlhgpA_oWKGxe2qNo
-If you want to boot it (on linux), i recommend you use qemu with this command: "qemu-system-x86_64 -m 8096 -vga cirrus boot.img" You are COMPLETELY FREE to find out other methods of booting it, hell, i'll personally nominate you if you do. You are also free to modify/poke around in the boot.img file, but please credit us for the original content.
+If you want to boot it (on linux), 
+I recommend you use qemu with this command: "qemu-system-x86_64 -m 8096 -vga cirrus boot.img" You are COMPLETELY FREE to find out other methods of booting it, hell, i'll personally nominate you if you do. You are also free to modify/poke around in the boot.img file, but please credit us for the original content.
 
 # Downloading the individual files and putting them into a .img file:
 The files are stored externally (to save space) here: [Download Large Files from Google Drive](https://drive.google.com/drive/folders/1kXq32pg1fIY7f_6IMKOUcyauZFw8obzT?usp=drive_link)
 
-*Put all the contents of Aspen Linux into a folder (let’s call it Aspen_Folder).*
+**Put all the contents of Aspen Linux into a folder (let’s call it Aspen_Folder).**
 Make an empty .img file (this is where the system will be installed).
 Use the following command to create a blank image (for example, 2GB in size):
 ```dd if=/dev/zero of=aspen.img bs=1M count=2048```
 
-*Mount the .img File*
+**Mount the .img File**
 Create an empty folder to mount the .img file (e.g., mount_point).
 ```mkdir mount_point```
 Mount the .img file to that folder:
 ```sudo mount -o loop aspen.img mount_point```
 
-*Copy Files from Aspen Linux*
+**Copy Files from Aspen Linux**
 Copy the contents of your Aspen Linux folder (Aspen_Folder) to the mounted folder:
 ```cp -r Aspen_Folder/* mount_point/```
 
-*Unmount the .img File*
+**Unmount the .img File**
 After the copy is done, unmount the .img file:
 ```sudo umount mount_point```
 
-*Boot with QEMU:*
+**Boot with QEMU:**
 Now you’re ready to boot the system via QEMU. Run this command:
 ```qemu-system-x86_64 -drive file=aspen.img,format=raw```
 

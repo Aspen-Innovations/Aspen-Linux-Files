@@ -13,29 +13,35 @@ I recommend you use qemu with this command: "qemu-system-x86_64 -m 8096 -vga cir
 The files are stored externally (to save space) here: [Download Large Files from Google Drive](https://drive.google.com/drive/folders/1kXq32pg1fIY7f_6IMKOUcyauZFw8obzT?usp=drive_link)
 
 **Put all the contents of Aspen Linux into a folder (let’s call it Aspen_Folder).**
+
 Make an empty .img file (this is where the system will be installed).
 Use the following command to create a blank image (for example, 2GB in size):
 ```dd if=/dev/zero of=aspen.img bs=1M count=2048```
 
 **Mount the .img File**
+
 Create an empty folder to mount the .img file (e.g., mount_point).
 ```mkdir mount_point```
 Mount the .img file to that folder:
 ```sudo mount -o loop aspen.img mount_point```
 
 **Copy Files from Aspen Linux**
+
 Copy the contents of your Aspen Linux folder (Aspen_Folder) to the mounted folder:
 ```cp -r Aspen_Folder/* mount_point/```
 
 **Unmount the .img File**
+
 After the copy is done, unmount the .img file:
 ```sudo umount mount_point```
 
 **Boot with QEMU:**
+
 Now you’re ready to boot the system via QEMU. Run this command:
 ```qemu-system-x86_64 -drive file=aspen.img,format=raw```
 
 That’s it! You’ve just set up and booted Aspen Linux in QEMU.
+Now, I have NOT figured out how to do this on windows, you're on your own with that one.
 
 WARNING: I am YET TO ADD user accounts, (since i'm too tired). I will add that later.
 In order to do this, you need to download the folders and files listed below:

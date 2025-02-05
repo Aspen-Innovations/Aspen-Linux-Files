@@ -51,4 +51,5 @@ then use the method already listed above.
 
 BE AWARE, THIS METHOD IS NOT ALWAYS RELIABLE!
 
-Contact us at "softwaredeveloper@aspen-innovations.org" for support on this method. psst, the "profile" file is the one that runs the welcome text on boot, as well as the many aliases for the many commands.
+Contact us at "softwaredeveloper@aspen-innovations.org" for support on this method. 
+psst, the "profile" file is the one that runs the welcome text on boot, as well as the many aliases for the many commands.

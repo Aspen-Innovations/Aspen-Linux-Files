@@ -9,6 +9,7 @@ https://drive.google.com/file/d/113AUl-hjovC7uJYrmr7NiNuz-XuFRVT8/view?usp=drive
 If you want to boot it (on linux), 
 I recommend you use qemu with this command: "qemu-system-x86_64 -m 8096 -vga cirrus boot.img" You are COMPLETELY FREE to find out other methods of booting it, hell, i'll personally nominate you if you do. You are also free to modify/poke around in the boot.img file, but please credit us for the original content.
 
+**THIS METHOD IS FOR LINUX USERS:**
 # Downloading the individual files and putting them into a .img file:
 The files are stored externally (to save space) here: [Download Large Files from Google Drive](https://drive.google.com/drive/folders/1kXq32pg1fIY7f_6IMKOUcyauZFw8obzT?usp=drive_link)
 

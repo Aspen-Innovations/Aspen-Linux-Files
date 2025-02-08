@@ -5,7 +5,7 @@ Thank you for having the time for reading this, now, where should we start?
 
 Booting the "boot.img" file:
 (you can download the boot.img by the google drive link listed below)
-https://drive.google.com/file/d/1memeJpZePz841H-qNmAr74K0aRSBRbkn/view?usp=drive_link
+https://drive.google.com/file/d/1jC2eLtbqnfxh6rXKQ35sgTsStFRyeQlb/view?usp=drive_link
 If you want to boot it (on linux), 
 I recommend you use qemu with this command: "qemu-system-x86_64 -m 8096 -vga cirrus boot.img" You are COMPLETELY FREE to find out other methods of booting it, hell, i'll personally nominate you if you do. You are also free to modify/poke around in the boot.img file, but please credit us for the original content.
 

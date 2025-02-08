@@ -45,9 +45,7 @@ That’s it! You’ve just set up and booted Aspen Linux in QEMU.
 Now, I have NOT figured out how to do this on windows, you're on your own with that one.
 
 WARNING: I am YET TO ADD user accounts, (since i'm too tired). I will add that later.
-In order to do this, you need to download the folders and files listed below:
-
-bin, boot, etc, lib, lib64, opt, sbin, tmp, usr, var, bzImage, linuxrc, profile.
+In order to do this, you need to download the contents of the folder.
 then use the method already listed above.
 
 BE AWARE, THIS METHOD IS NOT ALWAYS RELIABLE!
